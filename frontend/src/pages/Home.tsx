@@ -11,6 +11,7 @@ import { useState } from "react";
 import { severityOptions, statusOptions, typeOptions } from "../utils";
 import ReactSelect from "react-select";
 import Pagination from "../components/Pagination";
+import { IoMdAdd } from "react-icons/io";
 const Home = () => {
   const createTicketModal = useCreateTicketModal();
   const { data: agents } = useAgents();
@@ -69,6 +70,7 @@ const Home = () => {
         className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-4 py-3 font-medium cursor-pointer rounded-lg text-lg flex items-center justify-center gap-2"
       >
         Add Ticket
+        <IoMdAdd size={22} />
       </button>
       
       <div>

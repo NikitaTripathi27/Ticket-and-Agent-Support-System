@@ -22,7 +22,7 @@ export const statusOptions: TOptions[] = [
   { value: "Resolved", label: "Resolved" },
 ];
 
-export const returnPagination = (totalPage:number, page:number, limit:number, siblings:number) => {
+export const returnPagination = (totalPage:number, page:number, siblings:number) => {
   const totalPageNoInArray = 7 + siblings;
   if (totalPageNoInArray >= totalPage) return _.range(1, totalPage + 1);
 
