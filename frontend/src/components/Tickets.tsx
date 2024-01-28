@@ -75,9 +75,13 @@ const Tickets:React.FC<TicketProps> = ({tickets,page,limit}) => {
           ))}
         </tbody>
       ) : (
-        <div className="flex justify-center items-center text-xl font-semibold opacity-70 text-center border border-gray-300 border-top-0 h-[200px] w-full">
-          No Data
-        </div>
+        <tbody>
+        <tr>
+            <td colSpan={8} className="px-6 py-4 text-center border border-t-0 border-b-gray-300">
+                <div className="text-xl font-semibold text-gray-700">No Data</div>
+            </td>
+        </tr>
+    </tbody>
       )}
     </table>
   </div>
