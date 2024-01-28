@@ -78,7 +78,7 @@ const Tickets:React.FC<TicketProps> = ({tickets,page,limit}) => {
         <tbody>
         <tr>
             <td colSpan={8} className="px-6 py-4 text-center border border-t-0 border-b-gray-300">
-                <div className="text-xl font-semibold text-gray-700">No Data</div>
+                <div className="text-xl font-semibold text-gray-700 py-20">No Data</div>
             </td>
         </tr>
     </tbody>
