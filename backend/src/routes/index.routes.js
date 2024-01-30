@@ -11,6 +11,7 @@ const router = express.Router()
  */
 router.get('/support-tickets', asyncHandler(async(req,res,next)=>{
     const  query = req.query
+    console.log(query)
     const data = await allTickets(query)
     res.status(200).json(data)
 }) )

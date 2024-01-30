@@ -18,7 +18,7 @@ const links = [
 const Sidebar = () => {
     const {pathname} = useLocation()
   return (
-    <div className="w-[300px] h-screen fixed top-0 bottom-0 left-0 p-4 border-r">
+    <div className="w-[300px] top-0 bottom-0 left-0 p-4 border-r ">
       <Link to='/' className="text-3xl font-bold text-blue-800 text-center block">
       HELPDESK
       </Link>

@@ -15,6 +15,7 @@ export const createTicket = async (data) => {
 
 export const resolvedTicket = async(data)=>{
   const {id, status} = data
+  console.log(id)
   if(status == 'Resolved'){
     const updatedata = {
       ...data, resolvedOn:new Date()
@@ -58,7 +59,7 @@ export const allTickets = async (query) => {
     })
     .skip((page - 1) * limit)
     .limit(limit);
-
+   
   return {
     totalPages,
     totalCount,

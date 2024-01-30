@@ -21,7 +21,7 @@ type Schema = z.infer<typeof EditTicketSchema>;
 
 
 const EditTicketModal = ({ticket}:{ticket:TTicket | null}) => {
-  console.log(ticket)
+
   const { data: agents } = useAgents();
   const editTicketModal = useEditTicketModal();
   const queryClient = useQueryClient();

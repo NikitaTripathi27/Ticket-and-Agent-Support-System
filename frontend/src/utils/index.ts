@@ -24,6 +24,7 @@ export const statusOptions: TOptions[] = [
 
 export const returnPagination = (totalPage:number, page:number, siblings:number) => {
   const totalPageNoInArray = 7 + siblings;
+ 
   if (totalPageNoInArray >= totalPage) return _.range(1, totalPage + 1);
 
   const leftSiblingIndex = Math.max(page - siblings, 1);

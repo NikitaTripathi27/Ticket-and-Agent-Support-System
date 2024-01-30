@@ -64,7 +64,7 @@ const Home = () => {
     }
   }
   return (
-    <>
+    <div className="">
       <button
         onClick={createTicketModal.onOpen}
         className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-4 py-3 font-medium cursor-pointer rounded-lg text-lg flex items-center justify-center gap-2"
@@ -110,7 +110,7 @@ const Home = () => {
 
       <CreateTicketModal />
       <Pagination totalPages={data?.totalPages} limit={limit} page={page} siblings={1} onPageChange={handlePageChange}/>
-    </>
+    </div>
   );
 };
 

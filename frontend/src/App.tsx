@@ -11,7 +11,7 @@ const App = () => {
 
       <div className="relative min-h-screen w-full">
         <Sidebar />
-        <div className="w-[calc(100%-300px)] ml-auto p-4">
+        <div className="sm:w-[calc(100%-300px)] ml-auto sm:-mt-56 mt-0 p-4">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/agents" element={<Agents />} />
