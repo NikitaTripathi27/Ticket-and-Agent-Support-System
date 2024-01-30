@@ -23,3 +23,4 @@ To run development server
 ####  yarn dev or npm run dev
 
 git for local repository
+Kindly wait for few minutes for user interface to get displayed. Backend takes little time to pass data.
